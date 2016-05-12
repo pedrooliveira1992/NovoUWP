@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="AirFIT.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AirFIT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="#3C1F19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Style="{StaticResource WhiteLogoStyle}" />
+        <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Height="31" Margin="42,31,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:ConnectionId='2' x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="42,58,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="281"/>
+        <TextBlock x:ConnectionId='3' x:Name="textBlock1" HorizontalAlignment="Left" Height="31" Margin="41,99,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:ConnectionId='4' x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="41,126,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="281"/>
+        <TextBlock x:ConnectionId='5' x:Name="textBlock2" HorizontalAlignment="Left" Height="31" Margin="42,227,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="122"/>
+        <PasswordBox x:ConnectionId='6' x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,260,0,0" Grid.Row="3" Width="281"/>
+        <Button x:ConnectionId='7' x:Name="button" Content="Registar" HorizontalAlignment="Left" Height="38" Margin="43,318,0,0" Grid.Row="3" VerticalAlignment="Top" Width="116"                             />
+
+        <Frame x:ConnectionId='8' Name="MyFrame"></Frame>
+        <TextBlock x:ConnectionId='9' x:Name="textBlock3" HorizontalAlignment="Left" Height="23" Margin="41,167,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="121">
+        	<Run Text="Email:"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBox x:ConnectionId='10' x:Name="textBox2" HorizontalAlignment="Left" Height="4" Margin="42,190,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277"/>
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="AirFIT.Atividades"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AirFIT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="FlyoutButtonStyle">
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#3C1F19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Style="{StaticResource WhiteLogoStyle}" />
+
+        <StackPanel Orientation="Horizontal" 
+                    Grid.Row="1" 
+                    HorizontalAlignment="Center"/>
+
+        <Frame x:ConnectionId='1' Name="MyFrame"></Frame>
+
+        <Button x:ConnectionId='2' x:Name="button" Content="Criar Atividades&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="40" Margin="406,11,0,0" Grid.Row="3" VerticalAlignment="Top" Width="178"                              />
+        <Button x:ConnectionId='3' x:Name="button1" Content="Transcrever Áudio&#xD;&#xA;" HorizontalAlignment="Left" Height="40" Margin="679,11,0,0" Grid.Row="3" VerticalAlignment="Top" Width="178"                          />
+        <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" Height="43" Margin="23,90,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="349">
+        	<Run Text="Atividades Criadas"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <ListBox x:ConnectionId='5' x:Name="listBox" HorizontalAlignment="Left" Height="211" Margin="27,123,0,0" Grid.Row="3" VerticalAlignment="Top" Width="278">
+            <ListBoxItem Content="Atividade X"/>
+            <ListBoxItem Content="Atividade Y"/>
+        </ListBox>
+        <TextBlock x:ConnectionId='6' x:Name="textBlock1" HorizontalAlignment="Left" Height="30" Margin="364,87,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="295">
+        	<Run Text="Respetivas Tarefas"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <ListBox x:ConnectionId='7' x:Name="listBox1" HorizontalAlignment="Left" Height="201" Margin="371,130,0,0" Grid.Row="3" VerticalAlignment="Top" Width="261">
+            <ListBoxItem Content="Tarefa A Atividade X"/>
+            <ListBoxItem Content="Tarefa B Atividade X"/>
+        </ListBox>
+
+
+    </Grid>
+</Page>
+

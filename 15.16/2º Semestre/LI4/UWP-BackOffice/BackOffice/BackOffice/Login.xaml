@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="AirFIT.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AirFIT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="#3C1F19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Style="{StaticResource WhiteLogoStyle}" />
+        <TextBlock 
+            x:Name="textBlock" 
+            HorizontalAlignment="Left" 
+            Height="75" 
+            Margin="437,25,0,0" 
+            Grid.Row="1"
+            TextWrapping="Wrap"
+            Text="Bem-vindo ao AirFIT" 
+            VerticalAlignment="Top"
+            Width="364" 
+            />
+        <TextBlock
+            x:Name="textBox"
+            HorizontalAlignment="Left" 
+            Height="30" 
+            Margin="46,76,0,0" 
+            Grid.Row="1" 
+            TextWrapping="Wrap" 
+            Text="Login&#xD;&#xA;" 
+            VerticalAlignment="Top" 
+            Width="192"/>
+        <TextBlock 
+            x:Name="textBlock1" 
+            HorizontalAlignment="Left"
+            Height="31" Margin="46,115,0,0" 
+            Grid.Row="1" TextWrapping="Wrap" 
+            Text="Username" 
+            VerticalAlignment="Top" 
+            Width="178" 
+            />
+        <TextBlock 
+            x:Name="textBlock2" 
+            HorizontalAlignment="Left" 
+            Height="36" Margin="42,202,0,0" 
+            Grid.Row="1" TextWrapping="Wrap" 
+            Text="Password" 
+            VerticalAlignment="Top" 
+            Width="119"/>
+        <TextBox x:Name="textBox1"
+                 HorizontalAlignment="Left" 
+                 Height="28" 
+                 Margin="46,150,0,0"
+                 Grid.Row="1" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="167" TextChanged="textBox1_TextChanged"/>
+        <TextBox x:Name="textBox2" 
+                 HorizontalAlignment="Left"
+                 Height="37" 
+                 Margin="43,235,0,0" 
+                 Grid.Row="1" 
+                 TextWrapping="Wrap"
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="156" TextChanged="textBox2_TextChanged"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Height="42" Margin="45,286,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="LoginButton_Click"/>
+        <Button x:Name="button1" Content="Registro" HorizontalAlignment="Left" Height="42" Margin="221,287,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="RegisterButton_Click"/>
+
+       
+            <Frame Name="MyFrame"></Frame>
+        
+
+    </Grid>
+</Page>
